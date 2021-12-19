@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+
+    
+    <section class="customer">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide customer-item customer__slide">
+                    <img src="./images/client1@1x.png" alt="" width="85">
+                    <p class="customer__text">
+                        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla
+                        quam nunc,
+                        accumsan
+                        congue. Lorem ipsum primis in nibh vel risus.
+                    </p>
+                    <p class="customer__dots">. . .</p>
+                    <p class="customer__name">Emily, Los Angeles</p>
+                </div>
+                <div class="swiper-slide customer__slide">
+                    <img src="./images/client1@1x.png" alt="" width="85">
+                    <p class="customer__text">
+                        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla
+                        quam nunc,
+                        accumsan
+                        congue. Lorem ipsum primis in nibh vel risus.
+                    </p>
+                    <p class="customer__dots">. . .</p>
+                    <p class="customer__name">Amanda, New York</p>
+                </div>
+                <div class="swiper-slide customer__slide">
+                    <img src="./images/client1@1x.png" alt="" width="85">
+                    <p class="customer__text">
+                        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla
+                        quam nunc,
+                        accumsan
+                        congue. Lorem ipsum primis in nibh vel risus.
+                    </p>
+                    <p class="customer__dots">. . .</p>
+                    <p class="customer__name">Chloe, Chicago</p>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    
+    </section>
+    
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>
