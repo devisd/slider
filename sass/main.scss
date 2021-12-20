@@ -1,24 +1,16 @@
 .customer {
   position: relative;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  //   padding-top: 80px;
-  //   padding-bottom: 86px;
-  padding-left: 15px;
-  padding-right: 15px;
-  min-width: 320px;
+  padding-top: 154px;
+  padding-bottom: 170px;
 
   @media screen and (min-width: 768px) {
-    // padding-top: 121px;
-    // padding-bottom: 119px;
-    min-width: 768px;
+    padding-top: 279px;
+    padding-bottom: 197px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 123px;
-    padding-bottom: 132px;
-    width: 1280px;
+    padding-top: 382px;
+    padding-bottom: 234px;
   }
 }
 
@@ -63,24 +55,38 @@
   border-radius: unset;
 }
 
+.swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #d31342;
+  color: #d9d9d9;
+}
+
 .customer__text {
   position: relative;
-  //   width: 157px;
-  padding: 32px 54px 32px 50px;
+  width: 280px;
+  padding: 43px 66px 26px 57px;
   font-weight: 500;
   font-size: 12px;
   line-height: 2.55;
   text-align: center;
-  color: #000000;
+  color: $textblackcolor;
   background-color: #fafafa;
 
+  @media screen and (min-width: 480px) {
+    width: 440px;
+  }
+
   @media screen and (min-width: 768px) {
-    // width: 544px;
+    width: 620px;
+    padding: 47px 80px 34px 80px;
+    font-size: 14px;
+    line-height: 2.16;
   }
 
   @media screen and (min-width: 1280px) {
     width: 926px;
-    padding: 47px 89px 39px 87px;
+    padding: 32px 54px 32px 50px;
     font-size: 16px;
     line-height: 1.86;
     letter-spacing: 0.04em;
@@ -92,7 +98,7 @@
   position: absolute;
   top: 32px;
   left: 50px;
-  background-image: url("../images/quotes@1x.png");
+  //   background-image: url('../images/quotes@1x.png');
   opacity: 0.5;
   width: 54px;
   height: 40px;
@@ -110,5 +116,5 @@
   font-size: 20px;
   line-height: 1.86;
   text-align: center;
-  color: #000000;
+  color: $textblackcolor;
 }
